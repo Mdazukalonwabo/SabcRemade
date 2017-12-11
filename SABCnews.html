@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lonwabo's Project</title>
+    <link rel="stylesheet" type="text/css" href="SabcStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Questrial|Archivo+Black|Source+Sans+Pro" rel="stylesheet">
+
+    <style>
+/*class newsblock given a height*/
+        div.newsblock{
+          height: 250px;
+        }
+/*ends*/
+
+/*news feed block floated and blue background color add */
+        div.blue{
+          width: 250px;
+          height: 400px;
+          background-color: blue;
+          margin: 15px 10px 50px 100px;
+          float: left;
+        }
+/*ends*/
+
+/*news feed block floated and red background color add */
+        div.red{
+          width: 250px;
+          height: 400px;
+          background-color: rgb(255, 0, 0);
+          margin-top: 15px;
+          margin-right: 15px;
+          float: left;
+        }
+/*ends*/
+
+/*news feed block floated and green background color add */
+        div.green{
+          width: 250px;
+          height: 400px;
+          background-color: rgb(0, 66, 3);
+          margin-top: 15px;
+          margin-right: 15px;
+          float: left;
+        }
+/*ends*/
+
+/*news feed block floated and yellow background color add */
+        div.yellow{
+          width: 250px;
+          height: 400px;
+          background-color: rgb(255, 255, 0);
+          margin-top: 15px;
+          margin-right: 15px;
+          float: left;
+        }
+/*ends*/
+
+/*paragraphs given a downloaded font-family*/
+  #colors{
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+/*ends*/
+
+/*content floated left, given a height and width to be more appropriate for user eyes */
+        div.news{
+          float: left;
+          height: 250px;
+          width: 10px;
+        }
+/*ends*/
+
+/*the id's gievnn a width and a margin to the left as with as floated to the right*/
+        #main{
+          width: 200px;
+          margin-left: 100px;
+        }
+
+        #main2{
+          float: right;
+          width:550px;
+        }
+/*ends */
+
+/*articles floated to the left with a margin to the right, underling removed, border add */
+        div.southafrica.World.Business.Lifestyle.Opinion{
+          margin-right: 5px;
+          border: 1px solid grey;
+          border-width: 100px;
+          float: right;
+        }
+
+      .southafrica.World.Business.Lifestyle.Opinion a{
+          text-decoration: none;
+          float: right;
+        }
+/*ends*/
+
+/*articles floated to the right with a margin to the left*/
+        div.Africa.Politics.Science.Sport{
+          margin-left: 5px;
+          border: 1px solid grey;
+          border-width: 100px;
+          float: left;
+        }
+
+        div.Africa.Politics.Science.Sport  a{
+          text-decoration: none;
+          float: left;
+        }
+
+/*ends*/
+
+    </style>
+
+  </head>
+  <body>
+    <header>
+<!-- container with the logo aswell as the navbar that links to the other various pages of the webpage placed here-->
+      <section class="container">
+        <div class="Sabclogo">
+            <img src="images\logo.png" width="200px" height="100px" alt="SabcLogo">
+        </div>
+        <nav id="MainNav">
+            <li><a href="Index.html">Home</a></li>
+
+            <li>News</li>
+
+            <li><a href="SABCabout.html">About</a></li>
+
+            <li><a href="SABCcontact.html">Contact us</a></li>
+
+        </nav>
+      </section>
+<!-- ends-->
+    </header>
+
+<!-- section with the various headlines of the webpage with their captions and an image added styled in internal style sheet using the given id's and classes -->
+    <section id="main2">
+        <div class="Africa">
+            <h2><a href="http://www.sabc.co.za/news/a/ce60f000427ca39395f99d1f32f383bb/Worse-than-dogs-and-pigs:-life-as-a-gay-man-in-Zimbabwe-20170409">Africa</a></h2>
+
+              <img src="images\Gay(R).jpg" alt="gay" width="200px" height="200px">
+
+              <p><a href="http://www.sabc.co.za/news/a/ce60f000427ca39395f99d1f32f383bb/Worse-than-dogs-and-pigs:-life-as-a-gay-man-in-Zimbabwe-20170409">Worse than dogs and pigs: life as a gay man in Zimbabwe</a></p>
+        </div>
+
+        <div class="Politics">
+            <h2><a href="http://www.sabc.co.za/news/a/7234a880427cc30fa791bf1f32f383bb/Analysts-warns-of-dirty-tricks-in-ANC-leadership-battle-20170409">Politics</a></h2>
+
+              <img src="images\RAMAPHOSA.jpg" alt="ramaphosa" width="200px" height="200px">
+
+              <p><a href="http://www.sabc.co.za/news/a/7234a880427cc30fa791bf1f32f383bb/Analysts-warns-of-dirty-tricks-in-ANC-leadership-battle-20170409">Analysts warns of dirty tricks in ANC leadership battle</a></p>
+        </div>
+
+        <div class="Science">
+            <h2><a  href="http://www.sabc.co.za/news/a/fa40a300427cae749c139c1f32f383bb/China-warns-mild,-humid-winter-weather-could-make-smog-worse-20170409">Science</a></h2>
+
+              <img src="images\air+pollution.jpg" alt="air" width="200px" height="200px">
+
+              <p><a  href="http://www.sabc.co.za/news/a/fa40a300427cae749c139c1f32f383bb/China-warns-mild,-humid-winter-weather-could-make-smog-worse-20170409">China warns mild, humid winter weather could make smog worse</a></p>
+        </div>
+
+        <div class="Sport">
+            <h2><a href="http://www.sabc.co.za/news/a/71cfeb00427c8e508a369e1f32f383bb/Anderson-returns-to-US-Open-last-eight-20170409">Sport</a></h2>
+
+              <img src="images\KevinAnderson.png" alt="kevin" width="200px" height="200px">
+
+              <p><a href="http://www.sabc.co.za/news/a/71cfeb00427c8e508a369e1f32f383bb/Anderson-returns-to-US-Open-last-eight-20170409">Anderson returns to US Open last eight</a></p>
+        </div>
+
+     </section>
+
+     <section id="main">
+          <h1 style="color:rgb(15, 97, 173)">Also in the News</h1>
+
+            <div class="southafrica">
+                <h2><a href="http://www.sabc.co.za/news/a/fd974a80427ccda1ad48bd1f32f383bb/Ten-people-killed-in-Mpumalanga-accident-20170409">South Africa</a></h2>
+
+                  <img src="images\Accident+Twitter+(@ER24EMS).jpg" alt="accident" width="200px" height="200px">
+
+                  <p><a href="http://www.sabc.co.za/news/a/fd974a80427ccda1ad48bd1f32f383bb/Ten-people-killed-in-Mpumalanga-accident-20170409">Ten people killed in Mpumalanga accident</a></p>
+            </div>
+
+            <div class="World">
+                <h2 style="border-bottom:1 px solid"><a href="http://www.sabc.co.za/news/a/3825b400427c8d6c89ad9d1f32f383bb/Bell-Pottinger-CEO-resigns-ahead-of-South-Africa-report-20170409">World</a></h2>
+
+                  <img src="images\bell_pottinger.jpg" alt="bell" width="200px" height="200px">
+
+                  <p><a href="http://www.sabc.co.za/news/a/3825b400427c8d6c89ad9d1f32f383bb/Bell-Pottinger-CEO-resigns-ahead-of-South-Africa-report-20170409">Bell Pottinger CEO resigns</a></p>
+            </div>
+
+            <div class="Business">
+                <h2><a href="http://www.sabc.co.za/news/a/a72dba80427cf47a84079c1f32f383bb/Petrol-price-hike-pushes-up-taxi-fares-20170409">Business</a></h2>
+
+                  <img src="images\Jacob-Zuma.jpg" alt="JZ" width="200px" height="200px">
+
+                  <p><a href="http://www.sabc.co.za/news/a/a72dba80427cf47a84079c1f32f383bb/Petrol-price-hike-pushes-up-taxi-fares-20170409">Petrol price hike pushes up taxi fares</a></p>
+            </div>
+
+            <div class="Lifestyle">
+                <h2><a href="http://www.sabc.co.za/news/a/1745c700427b6a6582a99e1f32f383bb/Highway-Africa-focuses-on-state-of-journalism-20170309">Lifestyle</a></h2>
+
+                  <img src="images\highway.jpg" alt="highway" width="200px" height="200px">
+
+                  <p><a href="http://www.sabc.co.za/news/a/1745c700427b6a6582a99e1f32f383bb/Highway-Africa-focuses-on-state-of-journalism-20170309">Highway Africa focuses on state of journalism</a></p>
+            </div>
+
+            <div class="Opinion">
+                <h2><a href="http://www.sabc.co.za/news/a/7453710042770ef1be40be1f32f383bb/">Opinion</a></h2>
+
+                  <img src="images\Mining-images.jpg" alt="mining" width="200px" height="200px">
+
+                  <p><a href="http://www.sabc.co.za/news/a/7453710042770ef1be40be1f32f383bb/">Shedding light on why mining firms in eastern Congo are under attack</a></p>
+            </div>
+        </section>
+<!-- ends-->
+
+<!-- four news feeds floated with text and images placed in the bottom, divs styled using css style sheet -->
+          <div class="newsblocks">
+
+            <div class="blue">
+              <h3>SABC Editorial Policy</h3>
+
+                <p id="colors" style="background-color:rgb(38, 105, 214)" height="150px" >The South African Broadcasting Corporation (SABC) is embarking on a review process of its 2004 Editorial Policies, which were developed through a consultation process with the public at large.</p>
+
+                <img src="images\Pic.jpg" alt="TOWER" width="250px" height="140px" style="padding-top:85px">
+            </div>
+
+            <div class="red">
+              <h3>Albert Luthuli 50 years later</h3>
+
+                <p id="colors" style="background-color:rgb(237, 68, 68)" "margin:15px">50th death anniversary of Chief Albert Luthuli</p>
+
+                <img src="images\albert-luthuli(R).jpg" alt="albert" width="250px" height="150px" style="padding-top:150px">
+            </div>
+
+            <div class="green">
+                <h3>WEF on Africa 2017</h3>
+
+                <p id="colors" style="background-color:rgb(95, 226, 97)">The World Economic Forum (WEF) on Africa takes place in Durban, South Africa on 3 - 5 May 2017. Get the latest news about the event.</p>
+
+                <img src="images\WEF2AFRICA+_Side+resized.jpg" alt="WEF" width="250px" height="150px" style="padding-top:115px">
+            </div>
+
+            <div class="yellow">
+                <h3>SABC Board interviews</h3>
+
+                <p id="colors" style="background-color:rgb(234, 242, 118)">Parliamentary interviews for candidates shortlisted to fill the 12 non-executive Board positions at the South African Broadcasting Corporation (SABC).</p>
+
+                <img src="images\SABC.jpg" alt="WEF" width="250px" height="140px" style="padding-top:100px">
+            </div>
+
+<!-- ends -->
+          </div>
+
+    <footer>
+<!-- sabc logo placed in correct location and their social media plateform linked using icons that are added and can be accessed with a click-->
+      <div class="logo2">
+        <img src="images\sabc.png" alt="Sabclogo" width="150px" height="100px">
+      </div>
+
+    <nav id="socialicons">
+
+      <li><a href="https://twitter.com/sabcportal" target="_blank"><img src="images\24538.png" alt="twitter" width="60px" height="40px"></a></li>
+
+      <li><a href="https://www.facebook.com/SABCPortal/" target="_blank"><img src="images\download.jpg" alt="Facebook" width="60px" height="40px"></a></li>
+
+      <li><a href="https://www.youtube.com/user/sabc" target="_blank"><img src="images\download.png" alt="youtube" width="60px" height="40px"></a></li>
+
+   </nav>
+<!-- ends -->
+    </footer>
+  </body>
+</html>

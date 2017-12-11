@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lonwabo's Project</title>
+
+<!-- External css style sheet linked here and google font family downloads also linked here-->
+    <link rel="stylesheet" type="text/css" href="SabcStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Questrial|Archivo+Black" rel="stylesheet">
+<!-- ends -->
+
+<!-- internal css style sheet begins here -->
+    <style>
+
+/*id given approriate hieght and width with a black solid border, margin at the bottom and to the left */
+      #text{
+        width: 650px;
+        height: 780px;
+        border: 1px solid black;
+        margin-bottom: 5px;
+        margin-left: 2px;
+      }
+/*ends*/
+
+/*DIV given a width and height and information floated to the right*/
+      div.contacticons{
+        width: 100%;
+        height: 300px;
+        float: right;
+      }
+/*ends*/
+
+/*Navbar for page given a margin and padding that affects all sides(U,L,D,R), floated to the left and a height and width given to it*/
+      #navbar{
+        margin: 40px;
+        padding: 10px;
+        float: left;
+        width: 80%;
+        height: 80px;
+      }
+/*ends*/
+
+/*automated padding and margin removed*/
+      #navbar img {
+        padding: 0px;
+        margin: 0px;
+      }
+/*ends*/
+
+/*margin given to the bottom and left, padding left and top also given to position information in appropriate position, floated to the left and a width taking 79% of the space, bullets removed. List items floated to the right with a padding and automated margin removed and underliner also removed */
+      #word4icon {
+        margin-bottom: 180px;
+        margin-left: 40px;
+        padding-left: 2px;
+        padding-top: 0px;
+        float: left;
+        width: 79%;
+        list-style: none;
+      }
+
+      #word4icon li{
+        float: left;
+        padding: 15px;
+        margin: 0px;
+        text-decoration: none;
+      }
+/*ends*/
+
+/*div given a width and a height*/
+      div.form{
+        width: 100%;
+        height: 400px;;
+      }
+/*ends*/
+
+/*floated to the right and positioned in place with a padding to the right*/
+      #aside{
+        float: right;
+        position: inherit;
+        padding-right: 200px;
+      }
+/*ends*/
+    </style>
+<!-- css style sheet ends here-->
+
+  </head>
+  <body>
+    <header>
+
+<!-- container that tha holds the main nav bar of website, with the logo and the links to other pages-->
+      <section class="container1">
+
+            <div class="Sabclogo">
+                <img src="images\logo.png" width="200px" height="100px" alt="SabcLogo">
+            </div>
+
+<!-- main nevbar that stays consistent through out the website linking to the our pages -->
+            <nav id="MainNav">
+                <li><a href="Index.html">Home</a></li>
+
+                <li><a href="SABCnews.html">News</a></li>
+
+                <li><a href="SABCabout.html">About</a></li>
+
+                <li>Contact us</li>
+
+            </nav>
+<!-- ends -->
+    </section>
+<!-- ends -->
+  </header>
+
+      <aside>
+<!-- image of the advert placed above this list that has various links about the SABC with a h3 heading-->
+        <section id="aside">
+          <img src="images\ad.jpg" alt="ad">
+
+          <div class="">
+            <h3>ABOUT THE SABC</h3>
+              <ul id="links" style="list-style-type:none">
+                <li>Business Information</li>
+                <li>Citizen Information</li>
+                <li>Contact Us</li>
+                <li>CSI Project</li>
+                <li>Documents</li>
+                <li>FAQ</li>
+                <li>Press Release</li>
+                <li>Technology</li>
+                <li>Commercial Enterprises</li>
+                <li>SABC Tours</li>
+              </ul>
+        </div>
+<!-- ends -->
+
+<!-- iframe added with a h2 heading a width, height included -->
+          <div class="iframe">
+            <h2>SABC ON YOUTUBE</h2>
+              <iframe width="400px" height="200px" src="https://www.youtube.com/embed/?v=FrcFtIRRfuU&feature=youtu.be&list=PL09A9482D217EEDBD"></iframe>
+          </div>
+<!-- ends -->
+        </aside>
+      </section>
+
+<!-- section with all the details on what to do infilling out the provided form -->
+      <section id="text">
+
+        <div class="contacticons">
+
+<!-- image icons of various ways to contact the sabc placed within nav tag and editied in internal css sytle sheet, with a list below that describs what the icon is for  -->
+          <nav id="navbar">
+            <img src="images\email.gif" alt="e-mail icon" width="100px" height="100px">
+            <img src="images\home.png" alt="physical address" width="100px" height="100px">
+            <img src="images\MailBox.png" alt="mail box" width="100px" height="100px">
+            <img src="images\Phone.png" alt="landline" width="150px" width="15px">
+          </nav>
+        <figcaption>
+          <ul id="word4icon">
+            <li>E-mail</li>
+            <li>Physical address</li>
+            <li>Postal Details</li>
+            <li>Contact Details</li>
+          </ul>
+        </figcaption>
+<!-- ends -->
+        </div>
+
+<!-- content with the information on how to complete the form, with a form of all the neccassary information to be provided along with a selection as to what their enquiry is directly in relation with, along with sum inline styling also included-->
+            <h3 id="heading3" style="background-color:rgb(168, 170, 173)">E-MAIL US</h3>
+      <div class="emailcontant">
+        <div class="form"><figcaption>
+            <p>Fill out the form to send your comments, queries and feedback to the SABC</p>
+            <p>Please select a category for your request.
+            <form>
+              <select name="Category">
+                	<option value="Select a category">Select a category</option>
+                  <option value="TV Licence enquiries">TV Licence enquiries</option>
+                  <option value="Visit the SABC">Visit the SABC</option>
+                  <option value="Generic enquiries">Generic enquiries</option>
+                  <option value="Programme enquiries">Programme enquiries</option>
+                  <option value="Programme Proposals">Programme Proposals</option>
+                  <option value="Programme Purchases">Programme Purchases</option>
+                  <option value="TV and Radio signal reception problems">TV and Radio signal reception problems</option>
+                  <option value="SABC1 queries">SABC1 queries</option>
+                  <option value="SABC2 queries">SABC2 queries</option>
+                  <option value="SABC3 queries">SABC3 queries</option>
+                  <option value="Advertising on SABC platforms">Advertising on SABC platforms</option>
+                  <option value="Complaints about SABC services">Complaints about SABC services</option>
+                  <option value="SABC internships">SABC internships</option>
+                  <option value="CSI proposals">CSI proposals</option>
+                  <option value="SABC Enocore Enquiries">SABC Enocore Enquiries</option>
+                </select>
+            </p>
+
+            Name:<br><input type="text" name="Name"><br>
+
+            E-mail:<br><input type="email" name="e-mail"><br>
+
+            Subject:<br><input type="text" name="Subject" width="100%"><br>
+
+            Message:<br><textarea rows="10" col="10"></textarea></p></figcaption>
+
+            <p style="float:right"><input type="submit" name="submit" value="send"><input type="reset" name="reset" value="reset"></p>
+          </form>
+        </div>
+  <!-- ends-->
+      </div>
+
+    </section>
+
+    </div>
+    <footer>
+<!-- the sabc logo along with the various social media platform icons that the sabc is avaiblie on and their links when clicked on -->
+        <div class="logo2">
+          <img src="images\sabc.png" alt="Sabclogo" width="150px" height="100px">
+        </div>
+
+        <nav id="socialicons">
+          <li><a href="https://twitter.com/sabcportal" target="_blank"><img src="images\24538.png" alt="twitter" width="60px" height="40px"></a></li>
+          <li><a href="https://www.facebook.com/SABCPortal/" target="_blank"><img src="images\download.jpg" alt="Facebook" width="60px" height="40px"></a></li>
+          <li><a href="https://www.youtube.com/user/sabc" target="_blank"><img src="images\download.png" alt="youtube" width="60px" height="40px"></a></li>
+        </nav>
+<!-- ends -->
+    </footer>
+
+
+  </body>
+</html>

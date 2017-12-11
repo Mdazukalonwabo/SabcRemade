@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lonwabo's Project</title>
+
+<!-- External css style sheet linked here and google font family linked for font families-->
+    <link rel="stylesheet" type="text/css" href="SabcStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Questrial|Archivo+Black|Open+Sans+Condensed:300" rel="stylesheet">
+<!-- ends -->
+
+    <style>
+
+/*appearance/color and font of the heading above the contains of the contain in the website*/
+    #sa{
+      color: grey;
+      font-size: 14px;
+    }
+/*ends*/
+
+/*feedback form placed within a div container and given a border all around, the feedback id given a background color aswell as the automated margin removed and given a google font family, the table given a border to the bottom with margins*/
+    .containerForm{
+      border: 1px solid black;
+      margin-top: 10px;
+    }
+
+    #feedback{
+      background-color: rgb(111, 127, 232);
+      margin: 0px;
+      font-family:font-family: 'Open Sans Condensed', sans-serif;
+    }
+
+    table{
+      border-bottom: 1px dashed grey;
+      margin: 1px 4px;
+    }
+/*ends*/
+
+/*first section of the website that contains the handlining story and its content */
+    section.sec1{
+      border: 1px solid black;
+      width:600px;
+      height: 270px;
+      float: left;
+      margin-bottom: 5px;
+    }
+/*ends*/
+
+/*classes floated to the left and right, automated padding and margin removed with a height and width include*/
+    div.container1{
+      float: left;
+      width:50%;
+      height: 150px;;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    div.headline1{
+      float: right;
+      padding-left: 0px;
+      width: 50%;
+      height:100%;
+    }
+/*ends*/
+
+/*id's floated to the left and  to the right, width plus border added, padding and borders also added, and a margin to the right inclcuded, subheading ID given an grid to place in the different subheadlines*/
+    #subheadlines{
+      display: grid;
+      grid-template-rows: repeat(7, 1fr);
+      float: left;
+      width: 600px;
+
+  }
+
+    #para{
+      background-color: rgb(69, 66, 244);
+    }
+
+    .headlines{
+      border-bottom: 5px solid grey;
+      width: 100%;
+      margin-left: 5PX;
+      height: 200px;
+  }
+
+    #imgs{
+      float: left;
+      margin: 10px;
+  }
+
+    #ads{
+      float: right;
+      margin-right: 150px;
+  }
+  /*ends*/
+
+/*footer has links to various loctions, links placed within a list and styled as navbar, floated to the right, automated margin removed and bullets also removed, given padding aswell */
+    #footernav{
+      float: right;
+      margin: 0px;
+      padding: 20px;
+      list-style: none;
+  }
+/*ends*/
+
+/*list floated to the left and given a width aswell as a height spacing between words also added and margin. text placed in center*/
+    #footernav li{
+      float: left;
+      width: 60px;
+      height: 50px;
+      line-height: 25px;
+      text-align: center;
+      margin: 2px;
+}
+/*ends*/
+
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <section class="container">
+  <!-- section within the header that contains the nav bar with the various links to other pages-->
+
+            <div class="Sabclogo">
+                <img src="images\logo.png" width="200px" height="100px" alt="SabcLogo">
+            </div>
+            <nav id="MainNav">
+                <li>Home</li>
+
+                <li><a href="SABCnews.html">News</a></li>
+
+                <li><a href="SABCabout.html">About</a></li>
+
+                <li><a href="SABCcontact.html">Contact us</a></li>
+
+            </nav>
+      </section>
+<!-- ends -->
+
+    </header>
+<!-- main advert with a h2 to heading and a image of the article along with the article the is also a link to the full storie -->
+    <h2 id="sa">SOUTH AFRICA</h2>
+
+    <section id="ads">
+      <img src="images\ad.jpg" alt="ad" width="300px" height="280px">
+
+      <div class="containerForm">
+          <h2 id="feedback">Follow us:</h2>
+          <table>
+            <tr>
+              <td><a href="https://twitter.com/sabcportal" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgFhMERtgyzW0uzF9oSO80C-WMvAuVq6nxgXkabXL2ic4Md7f-4w" alt="twitter Icon" width="60px" height="40px" id="FormImgs"></a></td>
+              <td><a href="https://www.facebook.com/SABCNewsOnline/" target="_blank"><img src="http://www.freeiconspng.com/uploads/fb-icon-19.jpg" alt="Facebook Icon" width="60px" height="40px" id="FormImgs"></a></td>
+              <td><a href="https://www.youtube.com/sabcnews" target="_blank"><img src="http://www.iconarchive.com/download/i67995/marcus-roberto/google-play/YouTube.ico" alt="YouTube Icon" width="60px" height="40px" id="FormImgs"></a></td>
+              <td><a href="http://www.sabc.co.za/news/feeds" target="_blank"><img src="http://s3.amazonaws.com/Snowcovered_C_Images/36519_rss.png" alt="Broadcast Icon" width="60px" height="40px" id="FormImgs"></a></td>
+              <td><a href="http://www.sabc.co.za/wps/portal/SABC/SABCHOME" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5op1zNNvFgDG85EjHfXvQQtnyu8oZ5eDgShF32KlAz4dCA9_V" alt="Contact Icon" width="60px" height="40px" id="FormImgs"></a></td>
+            </tr>
+          </table>
+          <h4>Have your say, send us your feedback</h4>
+          <form>
+            <textarea rows="4" cols="40" name="comment" form="usrform">Enter text here...</textarea>
+            <br>
+            <input type="submit" name="Submit" value="SUBMIT">
+          </form>
+      </div>
+    </section>
+
+    <section class="sec1">
+        <div class="container1">
+          <img src="images\fatcakes.jpg" alt="" width="290px" height="215px" id=image1>
+          <figcaption id=para>Three boys from Langa, Western Cape died shortly after they consumed a vetkoek filled with polony.</figcaption>
+        </div>
+
+        <div class="headline1">
+              <a href="http://www.sabc.co.za/news/a/33b0dd004273ec5cb06dbc1f32f383bb/Autopsy-on-boys-who-died-after-eating-vetkoeks-to-be-conducted-20170109Autopsy-on-boys-who-died-after-eating-vetkoeks-to-be-conducted-20170109" target="blank"><h2 id="headline">Autopsy on boys who died after eating vetkoeks to be conducted</h2></a>
+
+              <h5>Friday 1 September 2017 10:05</h5>
+              <p>The last autopsy on one of the three Langa boys who died after allegedly eating vetkoeks bought from a vendor, will be conducted on Friday</p>
+        </div>
+    </section>
+<!--ends-->
+
+<!-- section created as div to place headlines within, grid has 6columns and 1 column -->
+  <section id="subheadlines">
+
+<!-- headinlines have links to full stories and image included about the article -->
+    <div class="headlines">
+
+        <img id="imgs" src="images\accident.jpg" alt="accident" width="150px" height="150px">
+        <h2><a href="http://www.sabc.co.za/news/a/acd69700427d464ab477bc1f32f383bb/Process-to-identify-Mpumalanga-crash-victims-underway-20170409">Process to identify Mpumalanga crash victims underway</a></h2>
+        <h5>Monday 4 September 2017 12:11</h5>
+
+        <p>Mpumalanga authorities are looking for some of the family members of the ten people who were killed in a collision between a car and a bakkie on Monday.</p>
+
+    </div>
+
+    <div class="headlines">
+
+        <img id="imgs" src="images\Fuel-pump.jpg" alt="Fuel" width="150px" height="150px">
+        <h2><a  href="http://www.sabc.co.za/news/a/cd814580427d147d956f9d1f32f383bb/Energy-Department-justifies-fuel-price-hike-20170409">Energy Department justifies fuel price hike</a></h2>
+
+        <h5>Monday 4 September 2017 11:21</h5>
+          <p>The Energy Department says this month's substantial increase in the price of fuel has been partly prompted by a raise in the salaries of petrol attendants.</p>
+    </div>
+
+    <div class="headlines">
+
+        <img id="imgs" src="images\Kefentse-Mkhari.jpg" alt="Kefentse" width="150px" height="150px">
+        <h2><a href="http://www.sabc.co.za/news/a/09a53600427d247f9e999e1f32f383bb/Students-await-Fees-Commission-report-20170409">Students await Fees Commission report</a></h2>
+
+      <h5>Monday 4 September 2017 10:56</h5>
+        <p>South Africa now has to wait for the president to study the report that looked into the feasibility of free higher education</p>
+    </div>
+
+    <div class="headlines">
+
+      <img id="imgs" src="images\kwezilomso-mbadazayo.jpg" alt="kwezilomso" width="150px" height="150px">
+      <h2><a href="http://www.sabc.co.za/news/a/4a620980427cf60c84d29c1f32f383bb/SA-records-alarming-rise-in-violence-against-women-20170409">SA records alarming rise in violence against women</a></h2>
+      <h5>Monday 4 September 2017 09:45</h5>
+      <p>The alarming statistics on femicide, rape and domestic violence demonstrate these unprecedented levels.</p>
+    </div>
+
+    <div class="headlines">
+
+      <img id="imgs" src="images\Accident+Twitter+(@ER24EMS) (1).jpg" alt="Accident+Twitter" width="150px" height="150px">
+      <h2><a href="http://www.sabc.co.za/news/a/fd974a80427ccda1ad48bd1f32f383bb/Ten-people-killed-in-Mpumalanga-accident-20170409">Ten people killed in Mpumalanga accident</a></h2>
+      <h5>Monday 4 September 2017 07:41</h5>
+      <p>Ten people have been killed in a collision between a car and a bakkie near Balfour in Mpumalanga.</p>
+    </div>
+
+    <div class="headlines">
+
+      <img id="imgs" src="images\police-badge.jpg" alt="police-badge" width="150px" height="150px">
+      <h2><a href="http://www.sabc.co.za/news/a/c03b0300427c9c2091ae9d1f32f383bb/Vuwani-protesters-shut-down-services-20170409">Vuwani protesters shut down services</a></h2>
+      <h5>Monday 4 September 2017 06:55</h5>
+      <p>Limpopo's provincial government has urged residents and pupils to ignore the calls for a stay-away in the province's   Vuwani area on Monday.</p>
+    </div>
+
+    <div class="headlines">
+
+      <img id="imgs" src="images\sabc-news-Live+(1).jpg" alt="sabc-news" width="150px" height="150px">
+      <h2><a href="http://www.sabc.co.za/news/a/3bba3a80427c8d6e89b19d1f32f383bb/SABC-News-Live-Blog:-04-September-2017-20170409">SABC News Live Blog: 04 September 2017</a></h2>
+      <h5>Monday 4 September 2017 05:23</h5>
+      <p>LGet the latest news as it happens on the SABC News Live Blog.</p>
+    </div>
+<!-- ends -->
+  </section>
+<!-- endsd -->
+
+<!-- footer has a image with the logo of the sabc and links to the various locations the sabc has on their sites along with their social media plateforms as icons that user can click on in order to link to  -->
+      <footer>
+        <nav>
+          <ul id="footernav">
+            <li><a href="http://www.sabc.co.za/wps/portal/SABC/SABCABOUT" target="_blank"> About the SABC</a></li>
+            <li><a href="http://www.sabc.co.za/wps/portal/SABC/SABCABOUT" target="_blank">Tenders</a></li>
+            <li><a href="http://www.sabc.co.za/wps/portal/SABC/SABCABOUT" target="_blank">Jobs</a></li>
+            <li><a href="http://www.sabc.co.za/wps/portal/SABC/SABCABOUT" target="_blank">Advertise</a></li>
+            <li><a href="http://www.sabc.co.za/wps/portal/SABC/SABCABOUT" target="_blank">Disclaimer</a></li>
+            <li><a href="http://www.sabc.co.za/wps/portal/SABC/SABCABOUT" target="_blank">Press</a></li>
+            <li><a href="http://www.sabc.co.za/wps/portal/SABC/SABCABOUT" target="_blank">Press Releases</a></li>
+            <li><a href="http://www.sabc.co.za/wps/portal/SABC/SABCABOUT" target="_blank">Site Map</a></li>
+          </ul>
+
+        </nav>
+
+          <div class="logo2">
+            <img src="images\sabc.png" alt="Sabclogo" width="150px" height="100px">
+          </div>
+
+          <nav id="socialicons">
+
+            <li><a href="https://twitter.com/sabcportal" target="_blank"><img src="images\24538.png" alt="twitter" width="60px" height="40px"></a></li>
+
+            <li><a href="https://www.facebook.com/SABCPortal/" target="_blank"><img src="images\download.jpg" alt="Facebook" width="60px" height="40px"></a></li>
+
+            <li><a href="https://www.youtube.com/user/sabc" target="_blank"><img src="images\download.png" alt="youtube" width="60px" height="40px"></a></li>
+
+          </nav>
+    </footer>
+<!-- ends     -->
+  </body>
+</html>

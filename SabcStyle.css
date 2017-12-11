@@ -1,0 +1,123 @@
+
+/*editing of body(webpage as a whole) appearances, color, font the general page will be using and will be seen by user*/
+body{
+    /*margin-right: 40px;
+    margin-left: 40px;*/
+  padding: 0px;
+  font-family: 'Questrial', sans-serif;
+  width: auto;
+  height: auto;  
+}
+/*ends*/
+
+/*header color and its main out look and appearnace in the webpage*/
+header{
+  background-color: rgb(92, 129, 188);
+  background-image: linear-gradient(to bottom,rgb(94, 150, 242) 30%, rgb(165, 193, 239) 50%);
+  background-blend-mode: screen;
+  background-repeat: repeat;
+  width: 1200;
+  height: 100px;
+}
+/*end*/
+
+/*position of the logo*/
+.Sabclogo{
+  position: absolute;
+  float: left;
+}
+/*ends*/
+
+/*turning the list into navbar removing the bullet-points and underlining as well as position*/
+#MainNav{
+  float: right;
+   margin: 0px;
+   padding-bottom: 40px;
+   padding-left: 150px;
+   padding-top: 40px;
+   list-style: none;
+   width: 1000px;
+}
+/*ends*/
+
+/*how it will appear for end user, background color, transparance and size of font*/
+#MainNav li{
+  float: left;
+  width: 180px;
+  height: 50px;
+  background-color: rgb(1, 51, 132);
+  border-radius: 15px;
+  opacity: 1;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  font-family: 'Archivo Black', sans-serif;
+  margin: 2px;
+}
+/*ends*/
+
+/*removing of underline to the links of the navbar and color*/
+#MainNav li a{
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+/*ends*/
+
+/*adding a hover funtion for the the navbar and background color*/
+#MainNav li a:hover{
+  background: rgb(56, 216, 120);
+  border-radius: 15px;
+  text-decoration: underline;
+}
+
+/*ends*/
+
+/*the footer of the page how it appears width, height and stick to the bottom of page*/
+footer{
+  background-color: rgb(0, 0, 0);
+  background-blend-mode: screen;
+  background-repeat: repeat;
+  width: 1200;
+  height: 100px;
+  clear: both;
+}
+/*ends*/
+
+
+/*editting of the social icons and their height on page*/
+#socialicons{
+  background-color: rgb(0, 0, 0)
+  float: right;
+  margin: 0px;
+  padding: 20px;
+  list-style: none;
+}
+
+#socialicons li{
+  float: left;
+  width: 60px;
+  height: 50px;
+  background-color: rgb(0, 0, 0);
+  opacity: 1;
+  line-height: 50px;
+  text-align: center;
+  margin: 2px;
+}
+/*ends*/
+
+/*the 2nd logo of sabc and where its position and appears on website*/
+.logo2{
+  float: left;
+  margin: 0px;
+  bottom: 45px;
+  padding: 0px;
+  right: 505px;
+}
+/*ends*/
+
+/*paragraphs given a goole font famil*/
+  p{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/*ends*/
