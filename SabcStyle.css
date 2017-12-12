@@ -18,6 +18,7 @@ header{
   background-repeat: repeat;
   width: 1200;
   height: 100px;
+  margin: 0px 130px;  
 }
 /*end*/
 
@@ -30,8 +31,7 @@ header{
 
 /*turning the list into navbar removing the bullet-points and underlining as well as position*/
 #MainNav{
-  float: right;
-   margin: 0px;
+   margin-left: 285px;
    padding-bottom: 40px;
    padding-left: 150px;
    padding-top: 40px;
